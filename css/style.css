@@ -161,9 +161,11 @@ p {
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
 .team-name {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     font-weight: 600;
     color: var(--text-color);
+    text-align: center;
+    line-height: 1.2;
 }
 .team-role {
     font-size: 0.75rem;
