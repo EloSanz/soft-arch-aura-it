@@ -1,7 +1,9 @@
 :root {
-    --primary-color: #0ea5e9; /* Celeste vibrante */
+    --primary-color: #0ea5e9;
+    /* Celeste vibrante */
     --secondary-color: #38bdf8;
-    --heading-color: #0f172a; /* Azul espacial oscuro */
+    --heading-color: #0f172a;
+    /* Azul espacial oscuro */
     --text-color: #1e293b;
     --text-muted: #475569;
     --bg-body-gradient: linear-gradient(135deg, #e0f2fe 0%, #7dd3fc 45%, #0f172a 100%);
@@ -66,7 +68,7 @@ body {
     background: var(--slide-bg);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
-    padding: 4rem;
+    padding: 3.5rem 4rem;
     border-radius: var(--border-radius);
     max-width: 1200px;
     width: 100%;
@@ -78,7 +80,9 @@ body {
 }
 
 /* Tipografía */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     color: var(--heading-color);
     font-weight: 800;
 }
@@ -109,25 +113,29 @@ p {
     justify-content: space-between;
     height: 100%;
 }
+
 .cover-top {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 4rem;
-    margin-bottom: 3rem;
+    gap: 3rem;
+    margin-bottom: 2rem;
 }
+
 .cover-text {
     flex: 1;
 }
+
 .cover-logo-wrapper {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .cover-logo {
     max-width: 300px;
-    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.1));
 }
 
 .team-section h3 {
@@ -135,21 +143,24 @@ p {
     margin-bottom: 1rem;
     text-align: center;
 }
+
 .team-grid {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 1.5rem 1rem;
+    gap: 1.2rem 1rem;
     justify-items: center;
 }
+
 .team-member {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0.4rem;
 }
+
 .team-avatar {
-    width: 64px;
-    height: 64px;
+    width: 56px;
+    height: 56px;
     border-radius: 50%;
     background: linear-gradient(135deg, #38bdf8, #0f172a);
     display: flex;
@@ -157,9 +168,10 @@ p {
     align-items: center;
     color: white;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
+
 .team-name {
     font-size: 0.85rem;
     font-weight: 600;
@@ -167,6 +179,7 @@ p {
     text-align: center;
     line-height: 1.2;
 }
+
 .team-role {
     font-size: 0.75rem;
     color: #0284c7;
@@ -183,19 +196,23 @@ p {
     gap: 3rem;
     margin-top: 2rem;
 }
+
 .feature-item {
     text-align: center;
     padding: 1rem;
 }
+
 .feature-icon {
     font-size: 2.5rem;
     color: var(--primary-color);
     margin-bottom: 1rem;
 }
+
 .feature-item h3 {
     font-size: 1.4rem;
     margin-bottom: 0.75rem;
 }
+
 .feature-item p {
     font-size: 1.05rem;
     color: var(--text-muted);
@@ -208,21 +225,24 @@ p {
     align-items: center;
     height: 100%;
 }
+
 .split-text {
     flex: 1;
     display: flex;
     flex-direction: column;
     gap: 1.5rem;
 }
+
 .split-image-wrapper {
     flex: 1;
     display: flex;
     justify-content: center;
 }
+
 .split-image {
     max-width: 100%;
     border-radius: 16px;
-    box-shadow: 0 20px 40px -10px rgba(0,0,0,0.15);
+    box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15);
 }
 
 /* Info Cards */
@@ -230,9 +250,10 @@ p {
     background: var(--card-bg);
     padding: 2rem;
     border-radius: 16px;
-    border: 1px solid rgba(255,255,255,0.8);
-    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.05);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
+
 .info-card h3 {
     display: flex;
     align-items: center;
@@ -240,6 +261,7 @@ p {
     font-size: 1.3rem;
     margin-bottom: 1rem;
 }
+
 .info-card h3 i {
     color: white;
     background: var(--primary-color);
@@ -251,6 +273,7 @@ p {
     border-radius: 50%;
     font-size: 0.9rem;
 }
+
 .info-card p {
     font-size: 1rem;
     color: var(--text-color);
@@ -280,7 +303,7 @@ p {
     justify-content: center;
     align-items: center;
     transition: all 0.2s;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .control-btn:hover:not(:disabled) {
@@ -294,20 +317,20 @@ p {
 }
 
 .control-btn:disabled {
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(255, 255, 255, 0.5);
     color: #94a3b8;
     cursor: not-allowed;
     box-shadow: none;
 }
 
 .slide-counter {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 0.5rem 1rem;
     border-radius: 20px;
     font-size: 0.9rem;
     font-weight: 600;
     color: var(--text-color);
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Badge Made with Aura */
